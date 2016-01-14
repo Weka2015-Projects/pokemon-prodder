@@ -1,0 +1,9 @@
+button.btn {
+  display: block;
+  width: 20px;
+  margin: auto;
+}
+
+.button {
+    position: absolute;
+}
