@@ -6,4 +6,5 @@ export class Controller {
     this.model = new Model()
     this.view = new View()
   }
+
 }
