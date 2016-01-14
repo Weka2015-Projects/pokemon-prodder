@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Weka2015-Projects/pokemon-prodder#readme",
   "devDependencies": {
-    "jspm": "^0.16.23"
+    "chai": "^3.4.1",
+    "jspm": "^0.16.23",
+    "mocha": "^2.3.4"
   },
   "jspm": {
     "devDependencies": {
