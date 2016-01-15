@@ -8,6 +8,34 @@ button.btn {
     position: absolute;
 }
 
-#image {
-    position: absolute;
+.image {
+  width: 270px;
+  height: 314px;
+  display: block;
+  margin: auto;
+  position:absolute;
+  left: 680px;
+  bottom: 550px;
+}
+
+.image2 {
+  position: relative;
+  width: 270px;
+  height: 314px;
+  display: block;
+  margin: auto;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+.image3 {
+  position: relative;
+  width: 270px;
+  height: 314px;
+  display: block;
+  margin: auto;
+  z-index: -2;
+  left: 0px;
+  bottom: 3000px;
 }

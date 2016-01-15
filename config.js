@@ -17,20 +17,13 @@ System.config({
       "app/boot.js",
       "app/router.js",
       "app/controller.js",
+      "npm:jquery@2.2.0",
       "npm:babel-runtime@5.8.34/helpers/create-class",
       "npm:babel-runtime@5.8.34/helpers/class-call-check",
-<<<<<<< HEAD
-      "app/view.js",
-      "app/model.js",
-      "npm:babel-runtime@5.8.34/core-js/object/define-property",
-=======
-      "app/controller.js",
-      "npm:jquery@2.2.0",
-      "npm:babel-runtime@5.8.34/core-js/object/define-property",
       "app/model.js",
       "app/view.js",
+      "npm:babel-runtime@5.8.34/core-js/object/define-property",
       "npm:jquery@2.2.0/dist/jquery",
->>>>>>> 402d58f57d24fef06a489e16a7049025dc19fdb4
       "npm:core-js@1.2.6/library/fn/object/define-property",
       "npm:core-js@1.2.6/library/modules/$"
     ]

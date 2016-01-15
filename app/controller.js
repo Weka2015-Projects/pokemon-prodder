@@ -6,5 +6,8 @@ export class Controller {
     this.model = new Model()
     this.view = new View()
   }
-
+  clickCounter() {
+    this.model.clickCounter()
+    this.view.render(this.model)
+  }
 }

@@ -6,11 +6,12 @@ export class Router {
     this.controller = new Controller()
   }
   listen() {
+    let that = this
     console.log("listening on server")
     $(() => {
-      $('#image').on('click',(function() {
-        console.log('Clicked')
-      })
+       $('.image').on('click',(function() {
+        that.controller.clickCounter()
+        })
       )
     })
   }
