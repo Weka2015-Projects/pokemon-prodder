@@ -7,3 +7,8 @@ button.btn {
 .button {
     position: absolute;
 }
+
+.image {
+  width: 270px;
+  height: 314px;
+}

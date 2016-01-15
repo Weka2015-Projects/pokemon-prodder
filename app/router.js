@@ -8,7 +8,7 @@ export class Router {
   listen() {
     console.log("listening on server")
     $(() => {
-      $('#image').on('click',(function() {
+      $('.image').on('click',(function() {
         console.log('Clicked')
       })
       )

@@ -16,10 +16,8 @@ System.config({
     "build.js": [
       "app/boot.js",
       "app/router.js",
-      "app/controller.js",
       "npm:babel-runtime@5.8.34/helpers/create-class",
       "npm:babel-runtime@5.8.34/helpers/class-call-check",
-
       "app/controller.js",
       "npm:jquery@2.2.0",
       "npm:babel-runtime@5.8.34/core-js/object/define-property",
