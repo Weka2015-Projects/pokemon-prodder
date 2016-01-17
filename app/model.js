@@ -11,16 +11,16 @@ export class Model {
         $('.bulbasaur').removeClass('bulbasaur').addClass('ivysaur')
         this.mastered++
       }
-      if(this.counter === 15){
+      if(this.counter === 10){
         $('.ivysaur').removeClass('ivysaur').addClass('venusaur')
         this.mastered++
       }
-      if(this.counter === 27){
+      if(this.counter === 15){
         $('.venusaur').removeClass('venusaur').addClass('charmander')
         this.mastered++
       }
       if(this.counter === 20){
-        $('charmander').removeClass('charmander').addClass('charmeleon')
+        $('.charmander').removeClass('charmander').addClass('charmeleon')
         this.mastered++
       }
       if(this.counter === 25){
