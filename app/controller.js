@@ -10,4 +10,8 @@ export class Controller {
     this.model.clickCounter()
     this.view.render(this.model)
   }
+  pokemonMastered() {
+    this.model.pokemonMastered()
+    this.view.render(this.model)
+  }
 }
