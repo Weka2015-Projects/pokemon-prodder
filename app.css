@@ -1,6 +1,6 @@
 button.btn {
   display: block;
-  width: 20px;
+  width: 200px;
   margin: auto;
 }
 
@@ -42,4 +42,28 @@ button.btn {
 
 .venusaur {
   background-image: url('./img/venusaur.png')
+}
+
+.squirtle {
+  background-image: url('./img/squirtle.jpg')
+}
+
+.wartortle {
+  background-image: url('./img/wartortle.jpg')
+}
+
+.blastoise {
+  background-image: url('./img/blastoise.jpg')
+}
+
+.caterpie {
+  background-image: url('/img/caterpie.jpg')
+}
+
+.metapod {
+  background-image: url('./img/metapod.jpg')
+}
+
+.butterfree {
+  background-image: url('./img/butterfree.jpg')
 }
