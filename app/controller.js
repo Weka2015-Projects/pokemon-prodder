@@ -14,4 +14,9 @@ export class Controller {
     this.model.pokemonMastered()
     this.view.render(this.model)
   }
+  onRestart() {
+    this.model = new Model()
+    this.model.onRestart()
+    this.view.render(this.model)
+  }
 }

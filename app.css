@@ -1,24 +1,76 @@
-button.btn {
-  display: block;
-  width: 200px;
+button.btn-restart {
   margin: auto;
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: pink;
+  transition: all 1s;
 }
 
-.button {
-    position: absolute;
+#restart {
+  width: 49%;
+  display: inline-block;
+}
+
+#start {
+  width: 49%;
+  display: inline-block;
+}
+
+button.btn-start {
+  margin-left: 45%;
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: pink;
+  transition: all 1s;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sitetitle {
+  color: #6C7A89;
+}
+
+.siteparagraph {
+  text-align: center;
+  color: #6C7A89;
+}
+
+button.btn-restart:hover {
+  background-color: lightblue;
+  padding: 12px 23px;
+}
+
+button.btn-start:hover {
+  background-color: lightblue;
+  padding: 12px 23px;
 }
 
 .image {
-  width: 270px;
+  width: 100%;
   height: 314px;
   display: inline-block;
   margin: auto;
-  position:absolute;
-
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+#counter {
+  text-align: center;
+}
+
+.counter {
+  color: #6C7A89;
+}
 
 .charmander {
   background-image: url('./img/charmander.jpg')
@@ -66,4 +118,16 @@ button.btn {
 
 .butterfree {
   background-image: url('./img/butterfree.jpg')
+}
+
+.weedle {
+  background-image: url('./img/weedle.jpg')
+}
+
+.kakuna {
+  background-image: url('./img/kakuna.jpg')
+}
+
+.beedrill {
+  background-image: url('./img/beedrill.jpg')
 }

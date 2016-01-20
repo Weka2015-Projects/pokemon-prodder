@@ -2,10 +2,11 @@ export class Model {
   constructor() {
     this.counter = 0
     this.mastered = 0
-    this.image1 = true
-    this.image2 = false
     }
   clickCounter() {
+      if(this.counter === 0){
+      $('.image').removeClass().addClass('image bulbasaur')
+      }
       this.counter += 1
       if(this.counter === 5){
         $('.bulbasaur').removeClass('bulbasaur').addClass('ivysaur')
@@ -51,5 +52,9 @@ export class Model {
         $('.metapod').removeClass('metapod').addClass('butterfree')
         this.mastered++
       }
+  }
+  onRestart() {
+      this.counter = 0
+      this.clickCounter()
   }
 }
