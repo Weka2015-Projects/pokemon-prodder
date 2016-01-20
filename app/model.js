@@ -8,48 +8,60 @@ export class Model {
       $('.image').removeClass().addClass('image bulbasaur')
       }
       this.counter += 1
-      if(this.counter === 5){
+      if(this.counter === 16){
         $('.bulbasaur').removeClass('bulbasaur').addClass('ivysaur')
         this.mastered++
       }
-      if(this.counter === 10){
+      if(this.counter === 32){
         $('.ivysaur').removeClass('ivysaur').addClass('venusaur')
         this.mastered++
       }
-      if(this.counter === 15){
+      if(this.counter === 48){
         $('.venusaur').removeClass('venusaur').addClass('charmander')
         this.mastered++
       }
-      if(this.counter === 20){
+      if(this.counter === 84){
         $('.charmander').removeClass('charmander').addClass('charmeleon')
         this.mastered++
       }
-      if(this.counter === 25){
+      if(this.counter === 100){
         $('.charmeleon').removeClass('charmeleon').addClass('charizard')
         this.mastered++
       }
-      if(this.counter === 30){
+      if(this.counter === 136){
         $('.charizard').removeClass('charizard').addClass('squirtle')
         this.mastered++
       }
-      if(this.counter === 35){
+      if(this.counter === 152){
         $('.squirtle').removeClass('squirtle').addClass('wartortle')
         this.mastered++
       }
-      if(this.counter === 40){
+      if(this.counter === 188){
         $('.wartortle').removeClass('wartortle').addClass('blastoise')
         this.mastered++
       }
-      if(this.counter === 45){
+      if(this.counter === 195){
         $('.blastoise').removeClass('blastoise').addClass('caterpie')
         this.mastered++
       }
-      if(this.counter === 50){
+      if(this.counter === 205){
         $('.caterpie').removeClass('caterpie').addClass('metapod')
         this.mastered++
       }
-      if(this.counter === 55){
+      if(this.counter === 212){
         $('.metapod').removeClass('metapod').addClass('butterfree')
+        this.mastered++
+      }
+      if(this.counter === 219){
+        $('.butterfree').removeClass('butterfree').addClass('weedle')
+        this.mastered++
+      }
+      if(this.counter === 229){
+        $('.weedle').removeClass('weedle').addClass('kakuna')
+        this.mastered++
+      }
+      if(this.counter === 239){
+        $('.kakuna').removeClass('kakuna').addClass('beedrill')
         this.mastered++
       }
   }
