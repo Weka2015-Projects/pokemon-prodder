@@ -14,8 +14,13 @@ export class Router {
         })
       )
     $(() => {
-      $('button').click(function() {
+      $('.btn-restart').click(function() {
         that.controller.onRestart()
+        })
+      })
+      $(() => {
+        $('.btn-start').click(function() {
+          that.controller.startTimer()
         })
       })
     })

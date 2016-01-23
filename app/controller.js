@@ -19,4 +19,8 @@ export class Controller {
     this.model.onRestart()
     this.view.render(this.model)
   }
+  startTimer() {
+    this.model.timer()
+    this.view.render(this.model)
+  }
 }
