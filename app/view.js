@@ -5,4 +5,8 @@ export class View {
     $("#counter").append("<p>number of clicks: " + Model.counter +"</p>")
     $("#counter").append("<p>number mastered: " + Model.mastered +"</p>")
   }
+  if(.image === ){
+    $('.image').removeClass('bulbasaur').addClass('ivysaur')
+    this.mastered++
+  }
 }

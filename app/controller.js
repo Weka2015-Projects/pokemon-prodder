@@ -19,4 +19,8 @@ export class Controller {
     this.model.onRestart()
     this.view.render(this.model)
   }
+  testForPokemon() {
+    this.model.onRestart()
+    this.view.render(this.model)
+  }
 }
