@@ -11,16 +11,12 @@ export class Router {
     $(() => {
        $('.image').on('click',(function() {
         that.controller.clickCounter()
+        that.controller.startTimer()
         })
       )
     $(() => {
       $('.btn-restart').click(function() {
         that.controller.onRestart()
-        })
-      })
-      $(() => {
-        $('.btn-start').click(function() {
-          that.controller.startTimer()
         })
       })
     })

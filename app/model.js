@@ -71,7 +71,11 @@ export class Model {
       this.clickCounter()
   }
   startTimer() {
-    this.timer = 0
+    $('.timer').each(function() {
+      var count = parseInt($(this).html())
+      if (count !== 0) {
+        $(this).html(count - 1)
+      }
+    })
   }
-
 }
