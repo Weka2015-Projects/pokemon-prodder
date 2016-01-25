@@ -1,6 +1,6 @@
 button.btn-restart {
   margin: auto;
-  display: inline-block;
+  display: block;
   box-shadow: none;
   border: none;
   padding: 10px 20px;
@@ -11,25 +11,7 @@ button.btn-restart {
 }
 
 #restart {
-  width: 49%;
-  display: inline-block;
-}
 
-#start {
-  width: 49%;
-  display: inline-block;
-}
-
-button.btn-start {
-  margin-left: 45%;
-  display: inline-block;
-  box-shadow: none;
-  border: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  color: white;
-  background-color: pink;
-  transition: all 1s;
 }
 
 h1 {
@@ -53,11 +35,6 @@ h1 {
 }
 
 button.btn-restart:hover {
-  background-color: lightblue;
-  padding: 12px 23px;
-}
-
-button.btn-start:hover {
   background-color: lightblue;
   padding: 12px 23px;
 }
