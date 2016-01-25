@@ -71,11 +71,13 @@ export class Model {
       this.clickCounter()
   }
   startTimer() {
-    $('.timer').each(function() {
-      var count = parseInt($(this).html())
-      if (count !== 0) {
-        $(this).html(count - 1)
-      }
-    })
+    var timer = 30
+    console.log(this.timer)
+    var counter = setInterval(timer, 1000)
+    timer == timer -1
+    if (timer <= 0){
+      clearInterval(counter)
+      return
+    }
   }
 }

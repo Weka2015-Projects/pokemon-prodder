@@ -20,7 +20,7 @@ export class Controller {
     this.view.render(this.model)
   }
   startTimer() {
-    this.model.timer()
+    this.model.startTimer()
     this.view.render(this.model)
   }
 }
