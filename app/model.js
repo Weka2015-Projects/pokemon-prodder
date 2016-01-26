@@ -1,13 +1,25 @@
+const pokemonList  = {
+  0: 'bulbasaur', 
+  5: 'ivysaur',
+  10: 'venusaur'
+}
 export class Model {
   constructor() {
     this.counter = 0
     this.mastered = 0
     this.timer = 0
+    this.pokemon = 'bulbasaur'
     }
 
   clickCounter() {
     this.counter++
-    this.mastered++
+    this.checkForMaster()
+  }
+  checkForMaster() {
+    if (pokemonList[this.counter]) {
+      this.pokemon = pokemonList[this.counter]  
+      this.mastered++
+    }
   }
   onRestart() {
       this.counter = 0

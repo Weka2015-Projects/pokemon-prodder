@@ -7,16 +7,7 @@ export class View {
   }
 
   renderImage(model) {
-    const images  = {
-      0: 'bulbasaur', 
-      5: 'ivysaur',
-      10: 'venusaur'
-    }
-    console.log(images)
-      console.log(model.counter)
-    if (images[model.counter]) {
-      $('#image').removeClass().addClass(images[model.counter])
-    }
+    $('#image').removeClass().addClass(model.pokemon)
   }
 }
 
