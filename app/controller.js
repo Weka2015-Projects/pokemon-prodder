@@ -7,7 +7,7 @@ export class Controller {
     this.view = new View()
   }
   countClick() {
-    this.model.clickCounter()
+    this.model.countClick()
     this.view.render(this.model)
   }
   restart() {

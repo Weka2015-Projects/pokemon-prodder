@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "jspm bundle app/boot.js --inject",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

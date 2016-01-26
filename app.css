@@ -18,16 +18,14 @@ h1 {
   color: #6C7A89;
 }
 
-.siteparagraph {
+.timer {
   text-align: center;
   color: #6C7A89;
 }
 
-#timer {
-  margin-top: 20px;
+.siteparagraph {
   text-align: center;
   color: #6C7A89;
-  font-size: 20px;
 }
 
 button.btn-restart:hover {
