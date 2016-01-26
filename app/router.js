@@ -11,7 +11,7 @@ export class Router {
        $('.image').on('click',(function() {
         that.controller.countClick()
         that.controller.startTimer()
-        }.bind(this))
+        })
       )
     $(() => {
       $('.btn-restart').click(function() {
@@ -21,3 +21,11 @@ export class Router {
     })
   }
 }
+
+$('#new-game').on('submit', (e) => {
+  e.preventDefault()
+  var input = $('#new-game input[name=name]')
+  var gameName = input.val()
+  $.post('/usernames', {name: gameName})
+  input.val('')
+})

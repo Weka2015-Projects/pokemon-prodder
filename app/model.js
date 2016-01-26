@@ -37,16 +37,18 @@ export class Model {
       this.counter = 0
   }
   startTimer(duration, display) {
-    var timer = duration, seconds
-    setInterval(function() {
-      seconds = parseInt(timer /60, 10)
-
+    var start = Date.now(),
+      diff,
+      seconds
+    function timer() {
+      diff = duration - (((Date.now() - start) / 1000) | 0)
+      seconds = (diff % 60) | 0
       seconds = seconds < 10 ? "0" + seconds : seconds
-      display.text(seconds)
-
-      if(--timer < 0) {
-        timer = duration
-      }
-    }, 1000)
+      if (diff <= 0) {
+        start = Date.now() + 1000
+       }
+    }
+    timer()
+    setInterval(timer, 1000)
   }
 }

@@ -10,6 +10,24 @@ button.btn-restart {
   transition: all 1s;
 }
 
+#submit {
+  color: white;
+  background-color: pink;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: none;
+  transition: all 1s;
+}
+
+#submit:hover {
+  background-color: lightblue;
+  padding: 5px 5px;
+}
+
+#new-game {
+  text-align: center;
+}
+
 h1 {
   text-align: center;
 }
