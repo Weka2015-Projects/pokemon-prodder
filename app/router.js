@@ -9,13 +9,13 @@ export class Router {
     let that = this
     $(() => {
        $('.image').on('click',(function() {
-        that.controller.clickCounter()
+        that.controller.countClick()
         that.controller.startTimer()
         }.bind(this))
       )
     $(() => {
       $('.btn-restart').click(function() {
-        that.controller.onRestart()
+        that.controller.restart()
         })
       })
     })

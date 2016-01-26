@@ -6,17 +6,13 @@ export class Controller {
     this.model = new Model()
     this.view = new View()
   }
-  clickCounter() {
+  countClick() {
     this.model.clickCounter()
     this.view.render(this.model)
   }
-  pokemonMastered() {
-    this.model.pokemonMastered()
-    this.view.render(this.model)
-  }
-  onRestart() {
+  restart() {
     this.model = new Model()
-    this.model.onRestart()
+    this.model.restart()
     this.view.render(this.model)
   }
   startTimer() {

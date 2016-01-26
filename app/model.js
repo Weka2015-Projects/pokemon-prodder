@@ -21,9 +21,8 @@ export class Model {
       this.mastered++
     }
   }
-  onRestart() {
+  restart() {
       this.counter = 0
-      this.clickCounter()
   }
   startTimer() {
     var timer = 30
