@@ -7,12 +7,11 @@ export class Router {
   }
   listen() {
     let that = this
-    // console.log("listening on server")
     $(() => {
        $('.image').on('click',(function() {
         that.controller.clickCounter()
         that.controller.startTimer()
-        })
+        }.bind(this))
       )
     $(() => {
       $('.btn-restart').click(function() {
