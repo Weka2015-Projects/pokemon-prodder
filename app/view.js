@@ -10,9 +10,7 @@ export class View {
     $('#image').removeClass().addClass(model.pokemon)
   }
   renderTimer(model) {
-    var thirtySeconds = 60 / 2,
-      display = $('#time').show("fast")
-    startTimer(thirtySeconds, display)
-    console.log(thirtySeconds)
+    span = document.getElementById("timer")
+    span.innerHTML = timer
   }
 }

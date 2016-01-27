@@ -1,19 +1,19 @@
 const pokemonList  = {
   0: 'bulbasaur',
-  7: 'ivysaur',
-  10: 'venusaur',
-  15: 'charmander',
-  20: 'charmeleon',
-  30: 'charizard',
-  40: 'squirtle',
-  50: 'wartortle',
-  60: 'blastoise',
-  70: 'caterpie',
-  80: 'metapod',
-  90: 'butterfree',
-  100: 'weedle',
-  110: 'kakuna',
-  120: 'beedrill'
+  16: 'ivysaur',
+  32: 'venusaur',
+  48: 'charmander',
+  84: 'charmeleon',
+  100: 'charizard',
+  136: 'squirtle',
+  152: 'wartortle',
+  188: 'blastoise',
+  195: 'caterpie',
+  205: 'metapod',
+  212: 'butterfree',
+  219: 'weedle',
+  229: 'kakuna',
+  239: 'beedrill'
 }
 export class Model {
   constructor() {
@@ -34,21 +34,16 @@ export class Model {
     }
   }
   restart() {
-      this.counter = 0
+    this.counter = 0
   }
   startTimer(duration, display) {
-    var start = Date.now(),
-      diff,
-      seconds
-    function timer() {
-      diff = duration - (((Date.now() - start) / 1000) | 0)
-      seconds = (diff % 60) | 0
-      seconds = seconds < 10 ? "0" + seconds : seconds
-      if (diff <= 0) {
-        start = Date.now() + 1000
-       }
-    }
-    timer()
-    setInterval(timer, 1000)
+    var timer = 30
+    var interval = setInterval(function() {
+      timer--
+      $('#time').text(timer)
+      if (timer === 0){
+        clearInterval(interval)
+      }
+    }, 1000)
   }
 }
