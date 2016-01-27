@@ -6,12 +6,26 @@ export class Router {
     this.controller = new Controller()
   }
   listen() {
-    console.log("listening on server")
+    let that = this
     $(() => {
-      $('.image').on('click',(function() {
-        console.log('Clicked')
-      })
+       $('.image').on('click',(function() {
+        that.controller.countClick()
+      
+        })
       )
+    $(() => {
+      $('.btn-restart').click(function() {
+        that.controller.restart()
+        })
+      })
     })
   }
 }
+
+$('#new-game').on('submit', (e) => {
+  e.preventDefault()
+  var input = $('#new-game input[name=name]')
+  var gameName = input.val()
+  $.post('/usernames', {name: gameName})
+  input.val('')
+})
