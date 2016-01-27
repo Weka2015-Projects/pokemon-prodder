@@ -5,7 +5,6 @@ export class View {
     $("#counter").append("<p>number of clicks: " + model.counter +"</p>")
     $("#counter").append("<p>number mastered: " + model.mastered +"</p>")
   }
-
   renderImage(model) {
     $('#image').removeClass().addClass(model.pokemon)
   }

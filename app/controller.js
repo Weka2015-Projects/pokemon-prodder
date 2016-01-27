@@ -9,6 +9,9 @@ export class Controller {
   countClick() {
     this.model.countClick()
     this.view.render(this.model)
+    if(this.model.counter === 1) {
+      this.startTimer()
+    }
   }
   restart() {
     this.model = new Model()

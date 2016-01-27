@@ -37,6 +37,7 @@ export class Model {
     this.counter = 0
   }
   startTimer(duration, display) {
+    console.log('hi')
     var timer = 30
     var interval = setInterval(function() {
       timer--

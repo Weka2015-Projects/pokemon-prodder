@@ -10,7 +10,7 @@ export class Router {
     $(() => {
        $('.image').on('click',(function() {
         that.controller.countClick()
-        that.controller.startTimer()
+      
         })
       )
     $(() => {
